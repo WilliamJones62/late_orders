@@ -1,0 +1,62 @@
+<h1>Late Orders</h1>
+
+<h2> Today </h3>
+
+<table class="mytable" class="display" cellspacing="0" >
+  <thead>
+  <tr>
+    <th>Group</th>
+    <th>Route</th>
+    <th>Cut Off</th>
+    <th>Entered</th>
+    <th>Rep</th>
+    <th>Order</th>
+    <th>Customer Code</th>
+    <th>Customer Name</th>
+    <th>User</th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @today.each do |t| %>
+    <tr>
+      <td><%= t.group_id %></td>
+      <td><%= t.route_code %></td>
+      <td><%= display_time_cutoff(t.cutoff_time) %></td>
+      <% @date = t.time_entered %>
+      <td><%= display_time_entered(@date) %></td>
+      <td><%= t.sls_rep %></td>
+      <td><%= t.order_numb %></td>
+      <td><%= t.cust_code %></td>
+      <td><%= t.bus_name %></td>
+      <td><%= t.user_so %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+
+<h2> Month To Date Summary </h3>
+
+<table class="mytable" class="display" cellspacing="0" >
+  <thead>
+  <tr>
+    <th>Group</th>
+    <th>Rep</th>
+    <th>Number of Orders</th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @total_array.each do |t| %>
+    <% if t[:rep] == ' ' %>
+      <tr id=bold>
+    <% else %>
+      <tr>
+    <% end %>
+      <td><%= t[:group] %></td>
+      <td><%= t[:rep] %></td>
+      <td><%= t[:count] %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>

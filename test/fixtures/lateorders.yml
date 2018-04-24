@@ -1,0 +1,41 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cost_ctr: MyString
+  sls_rep: MyString
+  group_id: MyString
+  route_code: MyString
+  route_desc: MyString
+  cust_code: MyString
+  bus_name: MyString
+  shipto_code: MyString
+  dueout_date: 2017-10-30 11:00:40
+  sale_date: 2017-10-30 11:00:40
+  date_entered: 2017-10-30 11:00:40
+  time_entered: 2017-10-30 11:00:40
+  order_numb: MyString
+  rel_numb: MyString
+  invoice_numb: MyString
+  sales_dol: 1.5
+  cutoff_time: 2017-10-30 11:00:40
+  datetime: 2017-10-30 11:00:40
+
+two:
+  cost_ctr: MyString
+  sls_rep: MyString
+  group_id: MyString
+  route_code: MyString
+  route_desc: MyString
+  cust_code: MyString
+  bus_name: MyString
+  shipto_code: MyString
+  dueout_date: 2017-10-30 11:00:40
+  sale_date: 2017-10-30 11:00:40
+  date_entered: 2017-10-30 11:00:40
+  time_entered: 2017-10-30 11:00:40
+  order_numb: MyString
+  rel_numb: MyString
+  invoice_numb: MyString
+  sales_dol: 1.5
+  cutoff_time: 2017-10-30 11:00:40
+  datetime: 2017-10-30 11:00:40

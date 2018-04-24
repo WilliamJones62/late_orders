@@ -1,0 +1,2 @@
+class Lateorder < ApplicationRecord
+end
